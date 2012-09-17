@@ -1,4 +1,4 @@
-<?
+<?php
 /*!
   \class   TemplateParseXMLOperator templateparsexmloperator.php
   \ingroup eZTemplateOperators
@@ -30,7 +30,7 @@ class TemplateParseXMLOperator
     */
     function operatorList()
     {
-         return $this->Operators;
+         return array( 'parsexml','filecheck' );
     }
     /*!
      \return true to tell the template engine that the parameter list exists per operator type,
